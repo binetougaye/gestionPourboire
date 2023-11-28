@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- GESTION DE POURBOIRE -->
+    <section class="container">
+        <div class="row justify-content-center ">
+            <div class="col-lg-6 col-md-12">
+                <div>
+                    <h5>Bill</h5>
+                    <div id="bill">
+                        <div><img src="images/icon-dollar.svg" alt=""></div>
+                        <input type="text" id="inputBill" placeholder="0">
+
+                    </div>
+                </div>
+                <div>
+                    <h5>Select Tip %</h5>
+                    <div class="row buttons">
+                        <div class="col-lg-12 ">
+                            <button class="mx-2" id="btn15">15%</button>
+                            <button class="mx-2" id="btn5">5%</button>
+                            <button class="mx-2" id="btn10">10%</button>
+                        </div>
+                        <div class="col-lg-12 ">
+                            <button class="mx-2" id="btn25">25%</button>
+                            <button class="mx-2" id="btn50">50%</button>
+                            <input type="text" class="mx-2" id="custom" placeholder="Custom">
+                        </div>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="error">
+                        <h5>Number of People</h5>
+                        <p id="error"></p>
+                    </div>
+                    <div id="people">
+                        <div><img src="images/icon-person.svg" alt=""></div>
+                        <input type="text" id="inputPeople" placeholder="0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 part2">
+                <div>
+                    <div class="one">
+                        <div class="tip">Tip amount/person</div>
+                        <div>
+                            <span id="pourcentage">$ 0.00</span>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="tip">Total/person</div>
+                        <div>
+                            <span id="montant"> $ 0.00</span>
+                        </div>
+                    </div>
+                    <button id="reset">RESET</button>
+                </div>
+                <!-- <button id="btn">Reset</button> -->
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
